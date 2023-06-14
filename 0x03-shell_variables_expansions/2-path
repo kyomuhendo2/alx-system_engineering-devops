@@ -1,2 +1,2 @@
 #!/bin/bash
-echo */action
+echo $((`echo $PATH | grep -0 ":/" | wc -l +1`))
